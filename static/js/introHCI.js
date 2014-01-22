@@ -41,11 +41,10 @@ function updateProject(e) {
 
   var projectID = $('#project').val();
   $(projectID).animate({
-    width: $('#width').val()
+    width: width
   });
 
-  var newText = $('#description').val();
-  $(projectID + ' .project-description').text(newText);
+  $(projectID + ' .project-description').text($('#description').val());
 }
 
 function appendDescriptions() {
